@@ -3,49 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alibaba Header</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <title>Trending Electronics</title>
+    <link rel="stylesheet" href="style-2.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="brand">
-        <img
-          src="assets/Layout/Brand/logo-colored.png"
-          alt="Brand Logo"
-          class="logo"
-        />
-      </div>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li class="active">Automobiles</li>
+          <li>Clothes and wear</li>
+          <li>Home interiors</li>
+          <li>Computer and tech</li>
+          <li>Tools, equipments</li>
+          <li>Sports and outdoor</li>
+          <li>Animal and pets</li>
+          <li>Machinery tools</li>
+          <li>More category</li>
+        </ul>
+      </aside>
 
-      <form class="search-form">
-        <input type="text" class="search-input" placeholder="Search" />
-        <select class="category-select">
-          <option>All category</option>
-        </select>
-        <button type="submit" class="search-button">Search</button>
-      </form>
+      <!-- Main Banner -->
+      <main class="main-banner">
+        <div class="banner-text">
+          <h3>Latest trending</h3>
+          <h1>Electronic items</h1>
+          <button>Learn more</button>
+        </div>
+      </main>
 
-      <div class="actions">
-        <div class="action-item">
-          <i class="fas fa-user"></i>
-          <span>Profile</span>
+      <!-- Right Panel -->
+      <aside class="right-panel">
+        <div class="user-card">
+          <div class="user-info">
+            <img src="assets/Avatar.png" alt="Avatar" class="avatar-img" />
+            <div class="user-text">
+              Hi, user<br />
+              <span>let's get stated</span>
+            </div>
+          </div>
+          <button class="join-button">Join now</button>
+          <button class="login-button">Log in</button>
         </div>
-        <div class="action-item">
-          <i class="fas fa-envelope"></i>
-          <span>Message</span>
+
+        <div class="promo-card promo-orange">
+          <p>
+            Get US $10 off<br />with a new <br />
+            supplier
+          </p>
         </div>
-        <div class="action-item">
-          <i class="fas fa-heart"></i>
-          <span>Orders</span>
+
+        <div class="promo-card promo-teal">
+          <p>
+            Send quotes with<br />supplier <br />
+            preferences
+          </p>
         </div>
-        <div class="action-item">
-          <i class="fas fa-shopping-cart"></i>
-          <span>My cart</span>
-        </div>
-      </div>
-    </header>
+      </aside>
+    </div>
   </body>
 </html>
