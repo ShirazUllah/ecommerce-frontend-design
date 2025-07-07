@@ -1,12 +1,13 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  background-color: #f3f5f7;
 }
 
 /* ----------------------------- header start-------------------------------- */
 .header {
-  width: 100%;
-  max-width: 1440px;
+  /* width: 100%; */
+  /* max-width: 1500px; */
   height: 86px;
   margin: 0 auto;
   background: #fff;
@@ -15,6 +16,7 @@ body {
   justify-content: space-between;
   padding: 0 40px;
   box-sizing: border-box;
+  padding: 0 80px;
 }
 
 .brand {
@@ -117,7 +119,7 @@ body {
 /*-------------------  navbar start ------------------------------------------ */
 .navbar {
   /* width: 100%; */
-  max-width: 1440px;
+  /* max-width: 1500px; */
   height: 56px;
   background: rgba(255, 255, 255, 1);
   border-top: 1px solid rgba(224, 224, 224, 1);
@@ -125,7 +127,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 80px;
   box-sizing: border-box;
   margin: auto;
 
@@ -201,17 +203,20 @@ body {
   align-items: center;
 }
 
-/* Hero Sectoin start */
+/* ----------------------Hero Sectoin start-------------------------------- */
 
 .container {
-  margin-top: 10px;
+  max-width: 1500px;
+  /* height: 400px; */
+  /* margin: 20px 80px; */
+  margin: 20px auto;
   display: grid;
   grid-template-columns: 250px 1fr 220px;
   gap: 20px;
-  background-color: #ffffff;
-  padding: 20px;
-  /* border-radius: 10px; */
-  /* border: 1px solid #dee2e7; */
+  background-color: rgba(255, 255, 255, 1);
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(222, 226, 231, 1);
   align-items: stretch;
   /* ensures equal height */
 }
@@ -251,31 +256,50 @@ body {
 
 .banner-text {
   max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* reduced spacing between elements */
 }
 
 .banner-text h3 {
-  font-size: 20px;
+  font-size: 28px;
+  /* slightly smaller like original */
   font-weight: 400;
+  line-height: 30px;
   color: #1C1C1C;
+  margin: 0;
 }
 
 .banner-text h1 {
   font-size: 32px;
+  /* reduced to better match */
   font-weight: 700;
-  margin: 10px 0 20px;
+  line-height: 32px;
+  /* tight line height */
   color: #1C1C1C;
+  margin: 0;
 }
 
 .banner-text button {
-  padding: 10px 16px;
+  width: 119px;
+  height: 40px;
+  gap: 10px;
+  margin-top: 10px;
+  padding: auto 16px;
   background-color: #ffffff;
   color: #1C1C1C;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  border: 1px solid #ffffff;
+  border: 1px solid #dee2e7;
   border-radius: 6px;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
+  box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.banner-text button:hover {
+  background-color: #f2f2f2;
 }
 
 /* Right Panel */
@@ -294,6 +318,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   gap: 12px;
+  margin-bottom: 10px;
 }
 
 .user-info {
@@ -351,6 +376,7 @@ body {
   font-size: 15px;
   line-height: 1.4;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .promo-orange {
@@ -362,14 +388,132 @@ body {
 }
 
 
+/* ---------------------- Section Sale Start--------------------------- */
+.section-sale {
+  max-width: 1500px;
+  height: 240px;
+  margin: 40px auto;
+  /* Moves to top of page */
+  background: #FFFFFF;
+  border: 1px solid #DEE2E7;
+  border-radius: 6px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.left-panel {
+  width: 285px;
+  padding: 20px;
+  border-right: 1px solid #E0E0E0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #1C1C1C;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #8B96A5;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  gap: 8px;
+}
+
+.time-box {
+  width: 45px;
+  height: 50px;
+  background: #606060;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.label {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.items {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.item {
+  width: 179px;
+  height: 100%;
+  text-align: center;
+  padding: 0 10px;
+  position: relative;
+  border-right: 1px solid #E0E0E0;
+}
+
+.item.no-border {
+  border-right: none;
+}
+
+.img-wrapper {
+  width: 140px;
+  height: 140px;
+  margin: 8px auto 0;
+  background: #fff;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.info {
+  position: absolute;
+  top: 159px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1C1C1C;
+  text-align: center;
+}
+
+.badge {
+  position: absolute;
+  top: 190px;
+  left: 57px;
+  background: #FFE3E3;
+  color: #EB001B;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 29px;
+  padding: 3px 13px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 28px;
+}
+
 
 /* ---------------------- Footer Section Start--------------------------- */
 
 .footer {
   background-color: rgba(255, 255, 255, 1);
   border-top: 1px solid #e5e5e5;
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1500px; */
+  margin: 0 50px;
   /* padding: 0 40px; */
   /* Optional: add padding for inner spacing */
   box-sizing: border-box;
